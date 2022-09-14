@@ -1,0 +1,444 @@
+body {
+    font-family: 'Roboto Condensed','Roboto','Helvetica';
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+}
+.navcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+    grid-template-areas:
+    "nav-l nav-l nav-l nav-r nav-r nav-r";
+    min-height: 14em;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background-color:#1b365d;
+}
+
+.bodycontainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+    margin: 0;
+    padding: 0;
+    grid-template-areas:
+    "skills-lh skills-lh port-l port-l port-l port-l"
+    "skills-lb skills-lb port-r port-r port-r port-r"
+    "skills-rh skills-rh port-r port-r port-r port-r"
+    "skills-rb skills-rb port-r port-r port-r port-r"
+    "exp-h exp-h exp-h exp-h exp-h exp-h"
+    "workp1 workp1 jtitle1 jtitle1 jtitle1 jtitle1"
+    "workp1 workp1 jdesc1 jdesc1 jdesc1 jdesc1"
+    "workp1 workp1 jtitle2 jtitle2 jtitle2 jtitle2"
+    "workp1 workp1 jdesc2 jdesc2 jdesc2 jdesc2"
+    "workp1 workp1 jtitle3 jtitle3 jtitle3 jtitle3"
+    "workp1 workp1 jdesc3 jdesc3 jdesc3 jdesc3"
+    "workp2 workp2 jtitle4 jtitle4 jtitle4 jtitle4"
+    "workp2 workp2 jdesc4 jdesc4 jdesc4 jdesc4"
+    "workp2 workp2 jtitle5 jtitle5 jtitle5 jtitle5"
+    "workp2 workp2 jdesc5 jdesc5 jdesc5 jdesc5"
+    "educ-h educ-h educ-h educ-h educ-h educ-h"
+    "school1 school1 degree1 degree1 degree1 degree1"
+    "school1 school1 schdesc1 schdesc1 schdesc1 schdesc1"
+    "school2 school2 degree2 degree2 degree2 degree2"
+    "school2 school2 schdesc2 schdesc2 schdesc2 schdesc2"
+    "vol-h vol-h vol-h vol-h vol-h vol-h"
+    "volplace1 volplace1 voltitle1 voltitle1 hob-l hob-l"
+    "volplace1 volplace1 voldesc1 voldesc1 hob-r hob-r"
+    "volplace2 volplace2 voltitle2 voltitle2 soc-t soc-t"
+    "volplace2 volplace2 voldesc2 voldesc2 soc-b soc-b";
+    margin-top: 14em;
+}
+
+.nav-l {
+    grid-area: nav-l;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 0 0 5em;
+    line-height: 1;
+    min-height: 14em;
+
+}
+
+h1 {
+    font-size: 3.45em;
+    font-weight: 700;
+    margin: auto;
+}
+
+p {
+    margin: 1em;
+    font-family: 'Karla'
+}
+
+header > p {
+    font-size: 1.8em;
+    font-family: 'Roboto Condensed','Roboto','Helvetica';
+    margin: 0;
+}
+
+div.workplace1 > p, div.workplace2 > p {
+    margin: 0 24px 24px 24px;
+}
+
+h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+abbr {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+header > h2 {
+    font-size: 1.5em;
+    margin: 24px;
+}
+
+li {
+    font-family: 'Karla';
+    margin: 0 24px 0 0;
+}
+
+nav > ul {
+    list-style: none;
+    line-height: 1.25;
+    padding: 0;
+    margin: 0;  
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 24px; 
+}
+
+h4 {
+    font-size: 1.2em;
+    margin: 24px;
+}
+
+h5 {
+    font-size: 1.2em;
+    margin:0;
+}
+
+figure {
+    width: 375px;
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+figure > img {
+    width: 100%
+}
+
+figure {
+    font-size: 0.8em;
+}
+
+a {
+    color: tomato; 
+}
+
+a:visited {
+    color: lightblue;
+    
+}
+
+a:hover {
+    color: lightpink;
+    
+}
+
+.nav-r {
+    grid-area: nav-r;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 1em;
+    padding: 0 1em 1em 30%;
+}
+
+.navh2 {
+    padding: 0;
+    margin: 1em 0 0 0;
+}
+
+.skills-l-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: skills-lh;
+    color: black;
+    background-color: #41b6e6;
+    scroll-margin-top: 14em;
+}
+
+.skills-r-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-area: skills-rh;
+    color: #d6d2c4;
+    background-color: #003b49;
+}
+
+.skills-l-body {
+    grid-area: skills-lb;
+    color: black;
+    background-color: #41b6e6;
+}
+
+.skills-r-body {
+    grid-area: skills-rb;
+    color: #d6d2c4;
+    background-color: #003b49;
+}
+
+.code-l {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-area: port-l;  
+    color: #003b49;
+    background-color: #d6d2c4;
+    scroll-margin-top: 14em;
+}
+
+.code-r {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: port-r;
+    color: #003b49;
+    background-color: #d6d2c4;
+}
+
+.work-head {
+    grid-area: exp-h;
+    scroll-margin-top: 14em;    
+    color: #1b365d;
+    background-color: #ffc845;
+}
+
+.workplace1 {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    grid-area: workp1;
+    
+    color: #003b49;
+    background-color: #d6d2c4;
+}
+
+.jobtitle1 {
+    grid-area: jtitle1;  
+    color: black;
+    background-color: #41b6e6;
+}
+
+.jobdesc1 {
+    grid-area: jdesc1;
+    color: #d6d2c4;
+    background-color: #003b49;
+}
+
+.jobtitle2 {
+    grid-area: jtitle2;
+    color: black;
+    background-color: #41b6e6;
+}
+
+.jobdesc2 {
+    grid-area: jdesc2;
+    color: #d6d2c4;
+    background-color: #003b49;
+}
+
+.jobtitle3 {
+    grid-area: jtitle3;
+    color: black;
+    background-color: #41b6e6;
+}
+
+.jobdesc3 {
+    grid-area: jdesc3;
+    color: #d6d2c4;
+    background-color: #003b49;
+}
+
+.workplace2 {
+    grid-area: workp2;
+    background-color: #003b49;
+    color: #d6d2c4;
+}
+
+.jobdesc4 {
+    grid-area: jdesc4;
+    color: #003b49;
+    background-color: #d6d2c4;
+}
+
+.jobtitle4 {
+    grid-area: jtitle4;
+    
+    color: black;
+    background-color: #41b6e6;
+}
+
+.jobdesc5 {
+    grid-area: jdesc5;
+    
+    color: #003b49;
+    background-color: #d6d2c4;
+}
+
+.jobtitle5 {
+    grid-area: jtitle5;
+    
+    color: black;
+    background-color: #41b6e6;
+}
+
+.edu-head {
+    grid-area: educ-h;
+    color: #1b365d;
+    background-color: #ffc845;
+    scroll-margin-top: 14em  
+}
+
+.school1 {
+    grid-area: school1;
+    color: #003b49;
+    background-color: #d6d2c4;
+}
+
+.degree1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 3em;
+    grid-area: degree1;
+    color: white;
+    background-color:#1d4289;
+}
+
+.schooldesc1 {
+    grid-area: schdesc1;
+    background-color: white;
+    color:#1d4289;
+}
+
+.school2 {
+    grid-area: school2;
+    background-color: #003b49;
+    color: #d6d2c4;
+}
+
+.degree2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 3em;
+    grid-area: degree2;
+    color: white;
+    background-color:#1d4289;
+}
+
+.schooldesc2 {
+    grid-area: schdesc2;
+    background-color: white;
+    color:#1d4289;
+}
+
+.vol-head {
+    grid-area: vol-h;
+    color: #1b365d;
+    background-color: #ffc845;
+    scroll-margin-top: 14em
+}
+
+.volplace1 {
+    grid-area: volplace1;
+    color: black;
+    background-color: #41b6e6;
+}
+
+.voltitle1 {
+    grid-area: voltitle1;
+    background-color: #003b49;
+    color: #d6d2c4;
+}
+
+.voldesc1 {
+    grid-area: voldesc1;
+    color: #003b49;
+    background-color: #d6d2c4;
+}
+
+.volplace2 {
+    grid-area: volplace2;
+    background-color: black;
+    color: #41b6e6;
+}
+
+.voltitle2 {
+    grid-area: voltitle2;
+    background-color: #003b49;
+    color: #d6d2c4;
+}
+
+.voldesc2 {
+    grid-area: voldesc2;
+    color: #003b49;
+    background-color: #d6d2c4;
+}
+
+.hobbies-l {
+    grid-area: hob-l;
+    background-color: black;
+    color: #41b6e6;
+}
+
+.hobbies-r {
+    grid-area: hob-r;
+    background-color: black;
+    color: #41b6e6;
+}
+
+.social-t {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: soc-t;
+    color: black;
+    background-color: #41b6e6;
+}
+
+.social-b {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: soc-b;
+    color: black;
+    background-color: #41b6e6;
+}
+
+div.social-b > nav {
+    margin-bottom: 50px;
+}

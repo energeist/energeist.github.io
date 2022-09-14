@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Meta tags to describe site contents and display options-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mark Rattle - Portfolio</title>
+    <!-- call CSS stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+    <!-- call Google Fonts API for external fonts, don't listen to the validator because it's wrong on this one-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Oxygen|Karla">
+    <meta name="description" content="Mark Rattle's personal profile and coding portfolio">
+    <meta name="author" content="Mark Rattle">
+    <meta name="keywords" content="coding portfolio, resume">
+    <!-- Open Graph meta tags to control how information is displayed when shared on social media, e.g. Facebook-->
+    <meta property="og:title" content="Mark Rattle - Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://energeist.github.io">
+    <meta property="og:description" content="Mark Rattle's personal profile and coding portfolio">
+    <meta property="og:image" content="hackerman.jpg">
+</head>
+
+<body>
+    <!-- lots of section / ul tags commented out or removed because I have still been playing around with trying to get them functioning in my grid layout.  They currently break EVERYTHING ;__;--> 
+    <!-- Title header of webpage, includes quick navigation pane-->    
+    <article>
+        <div class="navcontainer">
+            <div class="nav-l">
+                <header>
+                    <h1>Mark Rattle</h1>
+                    <p>Professional Portfolio</p>
+                </header>
+            </div>
+            <div class="nav-r">
+                <h2 class="navh2">
+                    Jump to a section:
+                </h2>        
+                <nav>
+                    <ul>
+                        <li><a href="#personal_summary">Personal Summary &amp; Skills</a></li>
+                        <li><a href="#coding_portfolio">Coding Portfolio</a></li>
+                        <li><a href="#work_experience">Work Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#volunteering">Volunteering &amp; Hobbies</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bodycontainer">        
+            <div class="skills-l-head" id="personal_summary">
+                <header>
+                    <h2>Personal Summary &amp; Skills</h2>
+                </header>
+            </div>
+            <div class="skills-l-body">
+                <p>I'm a physical process engineering professional turned aspiring software engineer, with a <abbr title="Master of Applied Science">MASc</abbr> in Chemical Engineering and 10 years of experience in research and development, industrial process design &amp; re-engineering and project management.</p>
+            </div>
+            <div class="skills-r-head">
+                <h3>Skills at-a-glance:</h3>
+            </div>
+            <div class="skills-r-body">
+                <ul>
+                    <li>Python, <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> &amp; <abbr title="Structured Query Language">SQL</abbr></li>
+                    <li>Lab-to-production process &amp; plant design</li>
+                    <li>Process optimization &amp; re-engineering</li>
+                    <li>Product development &amp; chemical formulation</li>
+                </ul>
+            </div>    
+            <div class="code-l" id="coding_portfolio">
+                <header>
+                    <h2>Coding Portfolio</h2>
+                </header>
+            </div>
+            <div class="code-r">
+                <figure>    
+                    <img src="coding_portfolio.jpg" alt="Meme image describing my lack of a coding portfolio">
+                    <figcaption><small>A meme image describing my lack of a coding portfolio.</small></figcaption>
+                </figure>
+            </div>
+            <div class="work-head" id="work_experience">
+                <header>
+                    <h2>Work Experience</h2>
+                </header>
+            </div>
+            <div class="workplace1">
+                <h3>Walker Emulsions, Burlington, ON</h3>
+                <p><time datetime="2012">2012</time> - <time datetime="2021">2021</time></p>
+                <p>Walker Emulsions develops and manufactures custom emulsion solutions for clients in a variety of industries including road construction, engineered wood products, pulp and paper and the automotive sectors.</p>
+            </div>
+            <div class="jobtitle1">
+                <h4>Project Manager</h4>
+                <p><time datetime="2019">2019</time> - <time datetime="2021">2021</time></p>
+            </div>
+            <div class="jobdesc1">
+                <ul>
+                    <li>Developed innovative, fully scalable solutions to complex problems involving restructuring of emulsion production methodology, creating new business opportunities.</li>
+                    <li>Designed and commissioned systems to produce wax emulsion directly at a customer&apos;s site instead of a Walker manufacturing plant, producing custom-tailored products while simultaneously cutting overall material shipping requirements by at least half to reduce production costs and lower carbon emissions.</li>
+                    <li>Conducted internal process improvement studies and experiments to streamline processes, while providing technical support or in-process troubleshooting for all day-to-day operations.</li>
+                    <li>Executed new product scale-up plans to introduce trial products without compromising existing production scheduling.</li>    
+                </ul>
+            </div>
+            <div class="jobtitle2">
+                <h4>Process Engineering Lead</h4>
+                <p><time datetime="2016">2016</time> - <time datetime="2019">2019</time></p>
+            </div>
+            <div class="jobdesc2">
+                <ul>
+                    <li>Selected process equipment upgrades based on design requirements and projected future needs. Worked swiftly with equipment suppliers to ensure prompt delivery, installation, and commissioning of required items.</li>
+                    <li>Tracked process conditions to predict performance changes that would require intervention. Improved scheduling of maintenance accordingly, which increased heat exchanger performance and reduced cooling water consumption.</li>
+                </ul>
+            </div>
+            <div class="jobtitle3">
+                <h4>Research Chemical Engineer</h4>
+                <p><time datetime="2012">2012</time> - <time datetime="2021">2016</time></p>
+            </div>
+            <div class="jobdesc3">
+                <ul>
+                    <li>Transferred work completed in my master&apos;s thesis to full industrial scale, replacing a key single-sourced ingredient with one that could be produced on-demand and according to required specifications, while reducing cost of the ingredient by approximately 40%.</li>
+                    <li>Developed and implemented new products and formulations for a wide variety of industrial emulsions used in engineered wood products, gypsum wallboards, fiberglass, paints, and asphalt applications</li>
+                    <li>Solved customer issues in a timely manner by utilizing chemical, analytical, engineering and business knowledge to evaluate performance issues caused by material deficiencies or processing conditions, presenting testing results and potential solutions in a clear and concise manner.</li>
+                    <li>Developed and maintained internal methods and standards to determine wax structure profiles using gas chromatography.</li>
+                </ul>
+            </div>
+            <div class="workplace2">
+                <h3>McMaster University, Hamilton, ON</h3>
+                <p><time datetime="2009">2009</time> - <time datetime="2012">2012</time></p>
+            </div>
+            <div class="jobtitle4">
+                <h4>Graduate Researcher</h4>
+                <p><time datetime="2009">2009</time> - <time datetime="2012">2012</time></p>
+            </div>
+            <div class="jobdesc4">
+                <ul>
+                    <li>Designed a series of experiments to complete research objectives associated with a master&apos;s thesis, working collaboratively with an industrial partner (Walker Emulsions).</li>
+                    <li>Associated conference proceedings include an oral presentation at the Canadian Society for Chemical Engineering Annual Conference (<abbr title="Canadian Society for Chemical Engineering">CSChE</abbr>) in <time datetime="2010-10">October 2010</time>, poster presentation at the <abbr title="Polymers at McMaster">PolyMAC</abbr> Multidisciplinary Conference in <time datetime="2010-12">December 2010</time>. Recipient of award for best poster presentation.</li>
+                </ul>
+            </div>
+            <div class="jobtitle5">
+                <h4>Teaching Assistant</h4>
+                <p><time datetime="2010">2010</time> - <time datetime="2011">2011</time></p>
+            </div>
+            <div class="jobdesc5">
+                <ul>
+                    <li>Taught fundamental concepts and theories in weekly tutorials to a group of 60 chemical engineering students.</li>
+                    <li>Hosted small group or 1-on-1 sessions with students for more focused problem solving.</li>
+                    <li>Evaluated student performance and offered constructive feedback highlighting areas where they were performing well, and suggesting ways in which they could improve.</li>
+                </ul>
+            </div>
+            <div class="edu-head" id="education">
+                <header>
+                    <h2>Education</h2>
+                </header>
+            </div>
+            <div class="school1">
+                <h3>McMaster University, Hamilton, ON</h3>
+                <p><time datetime="2009">2009</time> - <time datetime="2012">2012</time></p>
+            </div>
+            <div class="degree1">
+                <abbr title="Master of Applied Science">MASc</abbr> - Chemical Engineering
+            </div>
+            <div class="schooldesc1">
+                <ul>
+                    <li>Completed graduate research involving the design and manufacturing of novel synthetic emulsifiers for use in industrial emulsions. Thesis published: <i><a href="https://macsphere.mcmaster.ca/handle/11375/12612" target="_blank">Wax-Based Emulsifiers for Use in Emulsions to Impart Water Repellency to Gypsum Wallboards.</a></i></li>  
+                </ul>
+            </div>
+            <div class="school2">
+                <h3>Queen&apos;s University, Kingston, ON</h3>
+                <p><time datetime="2005">2005</time> - <time datetime="2009">2009</time></p>
+            </div>
+            <div class="degree2">
+                <abbr title="Bachelor of Science in Engineering">BSc(Eng.)</abbr> - Engineering Chemistry
+            </div>
+            <div class="schooldesc2">
+                <ul>
+                    <li>Awarded the Susan Near Prize in Chemistry in 2007.</li>
+                </ul>
+            </div>
+            <div class="vol-head" id="volunteering">
+                <header>
+                    <h2>Volunteering &amp; Hobbies</h2>
+                </header>
+            </div>
+            <div class="volplace1">
+                <h3>Neighbour to Neighbour, Hamilton, ON</h3>
+                <p><time datetime="2020">2020</time> - <time datetime="2022">2022</time></p>
+            </div>
+            <div class="voltitle1">
+                <h4>Food Bank Warehouse Volunteer</h4>
+            </div>
+            <div class="voldesc1">    
+                <ul>
+                    <li>Member of a team working to serve 1200 families monthly, ensuring that food bank clients receive compassionate service according to their individual and specific needs.</li>
+                </ul>
+            </div>
+            <div class="volplace2">
+                <h3>McMaster University, Hamilton, ON</h3>
+                <p><time datetime="2009">2009</time> - <time datetime="2011">2011</time></p>
+            </div>
+            <div class="voltitle2">
+                <h4>Chemical Engineering Graduate Students Club</h4>
+            </div>
+            <div class="voldesc2">
+                <ul>
+                    <li>Acting Club President from <time datetime="2010-09">September 2010</time> to <time datetime="2011-08">August 2011</time> and Athletics Coordinator from <time datetime="2009-09">September 2009</time> to <time datetime="2010-08">August 2010.</time></li>
+                </ul>
+            </div>
+            <div class="hobbies-l">
+                <h3>Cool stuff that I like to do:</h3>
+            </div>
+            <div class="hobbies-r">
+                <ul>
+                    <li>Rock climbing - outdoors &amp; indoors; bouldering, sport or trad!</li>
+                    <li>Powerlifting!</li>
+                    <li>Live music!</li>
+                    <li>Cooking!</li>
+                </ul>
+            </div>
+            <div class="social-t">
+                <h5>Find me online:</h5>
+            </div>
+            <div class="social-b">
+                <nav>
+                <!--contact information / socials-->
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/markrattle" target="_blank"><img src="linkedin_icon.png" height="35" width="35" alt="LinkedIn"> - LinkedIn</a></li>
+                        <li><a href="https://github.com/energeist" target="_blank"><img src="github_icon.png" height="35" width="35" alt="LinkedIn"> - Github</a></li>
+                        <li><a href="mailto:mark.rattle@gmail.com"><img src="mail_icon.png" height="35" width="35" alt="LinkedIn"> - Email</a></li>
+                    </ul>
+                    <a href="#top">Return to top</a>
+                </nav>
+            </div>
+        </div>
+    </article>
+</body>
+</html>
